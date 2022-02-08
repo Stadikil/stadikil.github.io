@@ -1,6 +1,76 @@
 body{
 	font-family: Arial,sans-serif;
 }
+.preloader {
+  /*фиксированное позиционирование*/
+  position: fixed;
+  /* координаты положения */
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  /* фоновый цвет элемента */
+  background: #e0e0e0;
+  /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
+  z-index: 1001;
+}
+
+.preloader__row {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 70px;
+  height: 70px;
+  margin-top: -35px;
+  margin-left: -35px;
+  text-align: center;
+  animation: preloader-rotate 2s infinite linear;
+}
+
+.preloader__item {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  background-color: #337ab7;
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  animation: preloader-bounce 2s infinite ease-in-out;
+}
+
+.preloader__item:last-child {
+  top: auto;
+  bottom: 0;
+  animation-delay:-1s;
+}
+
+@keyframes preloader-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes preloader-bounce {
+
+  0%,
+  100% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+}
+
+.loaded_hiding .preloader {
+  transition: 7s opacity;
+  opacity: 1;
+}
+
+.loaded .preloader {
+  display: none;
+}
+
 nav{
 	width: 100%;
 	height: 60px;
@@ -209,6 +279,18 @@ main{
 	animation: th 6.4s ease forwards;
 	
 }
+th input{
+	transition: all 0.2s;
+	transform: scale(1);
+
+}
+th input:hover{
+	background: #344051;
+	color: white;	
+}
+th input:active{
+	transform: scale(1.1);
+}
 
 @keyframes Two{
 	from{
@@ -240,6 +322,10 @@ main{
 		margin-bottom: 110px;			
 	}
 }
+.Two input:hover{
+	background: #344051;
+	color: white;	
+}
 
 
 .Two p:nth-child(2){
@@ -255,10 +341,10 @@ main{
 	color: #6d7682;
 	font-size: 35px;
 	line-height: 150px;
-	padding-left: 800px;	
-	text-decoration: underline;
+	padding-left: 800px;
+	}	
 	
-}
+
 .Three h4{
 	padding-left: 150px;
 	color: black;
@@ -381,6 +467,10 @@ main{
 	url(../img/static4.jpg) 86% 35%/auto 20% no-repeat,url(../img/fon.jpg) center/cover no-repeat;
 	height: 500px;
 	padding-top: 20px;
+	perspective: 1px;
+  	height: 50vh;
+  	overflow-x: hidden;
+  	overflow-y: auto;
 
 }
 .Static h3{
@@ -474,11 +564,17 @@ footer p{
 	letter-spacing: 0.5px;	
 	line-height: 20px;
 }
+
 footer a{
 	text-align: center;
 	margin: 0px 0px 0px 325px;
 	color: #fff;
 	font-size: 22px;
+
+
+}
+footer a:visited{
+	color: white;
 }
 footer h3{
 	padding-top: 50px;
