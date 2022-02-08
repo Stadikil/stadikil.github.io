@@ -84,9 +84,9 @@ nav{
 	line-height: 60px;
 	padding-left: 388px;
 	float: left;
-	-webkit-animation: comming 2s ease;
-	-o-animation: comming 2s ease;
-	animation: comming 2s ease;
+	-webkit-animation: comming 5s ease forwards;
+	-o-animation: comming 5s ease forwards;
+	animation: comming 5s ease forwards;
 }
 main{
 	width: 100%;
@@ -433,6 +433,11 @@ th input:active{
 	font-size: 45px;
 	padding-left: 850px;
 	text-decoration: underline;
+	transform-origin: center;
+	transform: rotate(0deg);
+}
+.Four h3:hover{
+	transform: rotate(-30deg);
 }
 .Four p{
 	font-size: 18px;
@@ -442,7 +447,8 @@ th input:active{
 	margin: 0px 0px 0px 590px;
 	letter-spacing: 0.5px;	
 	line-height: 1000px;
-}	
+}
+	
 
 .Five{
 	background: url(../img/fon.jpg) center/cover no-repeat;
@@ -454,6 +460,19 @@ th input:active{
 	border: 5px solid 0;
 	border-radius: 10px;
 	margin: 0px 350px 0px 350px;
+	animation-name: move;
+	animation-duration: 3s;
+	-webkit-animation-timing-function: linear;
+	-o-animation-timing-function: linear;
+	animation-timing-function: linear;
+}
+@keyframes move{
+	from{
+		margin-right: 0;
+		to{
+			margin-right:300px;
+		}
+	}
 }
 .Five h3{
 	height: 300px;
@@ -461,6 +480,9 @@ th input:active{
 	text-align: center;
 	font-size: 45px;
 	line-height: 90px;
+}
+.Five h3:hover{
+	transform: rotateX(60deg);
 }
 .Strok h5 {
 	text-align: left;
