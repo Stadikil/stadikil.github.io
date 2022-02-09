@@ -519,9 +519,8 @@ th input:active{
 	height: 500px;
 	padding-top: 20px;
 	perspective: 1px;
-  	height: 50vh;
-  	overflow-x: hidden;
-  	overflow-y: auto;
+  	
+  	background-attachment:fixed;
 
 }
 .Static h3{
