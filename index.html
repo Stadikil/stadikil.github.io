@@ -1,223 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="description" content="Этоя моя первая страница...">
-	<meta name="author" content="Ivan">
-	<meta name="robots" content="all">
-	<meta property="og.title" content="Это моя первая страница...">
-	<title>Иван Макаров</title>
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <div class="preloader">
-  <div class="preloader__row">
-    <div class="preloader__item"></div>
-    <div class="preloader__item"></div>
-  </div>
-</div>
-<script>
-  window.onload = function () {
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Этоя моя первая страница...">
+    <meta name="author" content="Ivan">
+    <meta name="robots" content="all">
+    <meta property="og.title" content="Это моя первая страница...">
+    <title>Иван Макаров</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="preloader">
+      <div class="preloader__row">
+        <div class="preloader__item"></div>
+        <div class="preloader__item"></div>
+      </div>
+    </div>
+    <script>
+    window.onload = function () {
     document.body.classList.add('loaded_hiding');
     window.setTimeout(function () {
-      document.body.classList.add('loaded');
-      document.body.classList.remove('loaded_hiding');
+    document.body.classList.add('loaded');
+    document.body.classList.remove('loaded_hiding');
     }, 900);
-  }
-</script>
-
-	<header>
-		<nav>
-      <div class="container">
-        <div class="row">
-          <div class="col-xxl-2 col-lg-3 col-7"><div class="logo">Иван Макаров    </div> </div>
-                    <div class=" px-0 col-xxl-6 col-xl-7 col-lg-8 offset-4 offset-xl-2 offset-lg-1 d-none d-lg-block"><div class="menu">
-        <ul>
-          <li><a href="#">Обо мне</a></li>
-          <li><a href="#">Услуги</a></li>
-          <li><a href="#">Кейсы</a></li>
-          <li><a href="#">Прайс</a></li>
-          <li><a href="#">Отзывы</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul> </div>
+    }
+    </script>
+    <header>
+      <nav>
+        <div class="container">
+          <div class="row">
+            <div class="col-xxl-2 col-lg-3 col-7"><div class="logo">Иван Макаров    </div> </div>
+            <div class=" px-0 col-xxl-6 col-xl-7 col-lg-8 offset-4 offset-xl-2 offset-lg-1 d-none d-lg-block"><div class="menu">
+              <ul>
+                <li><a href="#">Обо мне</a></li>
+                <li><a href="#">Услуги</a></li>
+                <li><a href="#">Кейсы</a></li>
+                <li><a href="#">Прайс</a></li>
+                <li><a href="#">Отзывы</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul> </div>
+            </div>
+            <div class="col-5 d-flex d-lg-none flex-column justify-content-center align-items-end">
+              <div class="dropdown">
+                <a class="btn btn-outline-secondary dropdown-toggle white-btn" href="#"      role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                  Навигация
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Обо мне</a></li>
+                  <li><a class="dropdown-item" href="#">Услуги</a></li>
+                  <li><a class="dropdown-item" href="#">Кейсы</a></li>
+                  <li><a class="dropdown-item" href="#">Прайс</a></li>
+                  <li><a class="dropdown-item" href="#">Отзывы</a></li>
+                  <li><a class="dropdown-item" href="#">Контакты</a></li>
+                </ul>
+              </div></div>
+            </div>
+            
           </div>
-          <div class="col-5 d-flex d-lg-none flex-column justify-content-center align-items-end">
-            <div class="dropdown">
-  <a class="btn btn-outline-secondary dropdown-toggle white-btn" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-    Навигация
-  </a>
-
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-     <li><a class="dropdown-item"  href="#">Обо мне</a></li>
-          <li><a class="dropdown-item"  href="#">Услуги</a></li>
-          <li><a class="dropdown-item"  href="#">Кейсы</a></li>
-          <li><a class="dropdown-item"  href="#">Прайс</a></li>
-          <li><a class="dropdown-item"  href="#">Отзывы</a></li>
-          <li><a class="dropdown-item"  href="#">Контакты</a></li>
-  </ul>
-</div></div> 
+        </nav>
+      </header>
+      <main>
+        <section  class="main">
+          <div class="container h-100"><div class="row align-items-center h-100"><div class="col-lg-6">
+            <div class="title__container">
+              <h1> Привет <br> Я Иван Макаров </h1>
+              <h4> Фулл стек веб-разработчкик</h4>
+              <input type="button" value="Обо мне">
+              <input type="button" value="Мои работы">
+            </div>
+          </div></div></div>
+          
+        </section>
+      </main>
+      
+      <div class="Two">
+        <h2>Обо мне</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing, elit.<br> Praesentium accusamus nulla corrupti illum veniam assumenda!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, voluptates.</p>
+        <table border="3" width="10%">
+          <th>
+            <input type="button" value="скачать резюме">
+            
+          </th>
+          
+        </table>
       </div>
-			
+      <div class="Three">
+        <h3>Что я умею</h3>
+        <div class="web_scill" style="">
+          <img src="" alt="">
+          <h4>Веб-дизайн</h4>
+          <p>Lorem ipsum dolor sit amet.</br></p>
+        </div>
+        <div class="web_scill2" style="">
+          <img src=" " alt="">
+          <h4>Разработка</h4>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="web_scill3" style="">
+          <img src=" " alt="">
+          <h4>СЕО-оптимизация</h4>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+        <div class="web_scill4" style="">
+          <img src=" " alt="">
+          <h4>Маркетинг</h4>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
       </div>
-    </nav>
-  </header>
-  <main>  
-    <section  class="main">
-      <div class="title__container">
-       <h1> Привет <br> Я Иван Макаров </h1>
-       <h4> Фулл стек веб-разработчкик</h4>
-       <input type="button" value="Обо мне">
-       <input type="button" value="Мои работы">
-     </div>
-   </section>
- </main>
- <script>src="js/bootstrap.bundle.min.js"</script>
-
-
- <div class="Two">
-  <h2>Обо мне</h2>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing, elit.<br> Praesentium accusamus nulla corrupti illum veniam assumenda!</p>
-
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, voluptates.</p>
-
-  <table border="3" width="10%">
-
-
-    <th>
-    	<input type="button" value="скачать резюме">
-    	
-    </th>
-    
-  </table>
-</div>
-
-
-
-<div class="Three">
- <h3>Что я умею</h3>
-
- <div class="web_scill" style="">
-  <img src="" alt="">
-  <h4>Веб-дизайн</h4>
-  <p>Lorem ipsum dolor sit amet.</br></p>
-</div>
-<div class="web_scill2" style="">
-  <img src=" " alt="">
-  <h4>Разработка</h4>
-  <p>Lorem ipsum dolor sit amet.</p>
-</div>
-<div class="web_scill3" style="">  
-  <img src=" " alt="">
-  <h4>СЕО-оптимизация</h4>
-  <p>Lorem ipsum dolor sit amet consectetur.</p>
-</div>
-<div class="web_scill4" style="">  
-  <img src=" " alt="">
-  <h4>Маркетинг</h4>
-  <p>Lorem ipsum dolor sit amet.</p>
-</div>
-</div>
-
-
-
-
-<div class="Four">
-  <h3>Кейсы</h3>
-  <p ><b>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam ut neque.</p>
-
-  </div>
-
-  <div class="Five">
-    <div class="Five2">
-        <h3>Расчет стоимости</h3>
-        <div class="Strok">
-          <h5>Тип сайта</h5>
-          <select name="list1" id="list" >
-            <option value="Opt1">Выберите пункт...</option>
-
-          </select>
-
-
-
-          <h5>Дизайн</h5>
-          <select name="list2" id="list">
-            <option value="Opt2">Выберите пункт...</option>
-
-
-          </select>
-
-          <h5>Адаптивность</h5>
-          <select name="list3" id="list">
-           <option value="Opt3">Выберите пункт...</option>
-
-         </select>
-
-       </div>
-
-       <div class="Six"> 
-        <h5>Сроки</h5>
-        <h5>Стоимость</h5>
-        <a href="https://yandex.ru"target="_blank">Оставить заявку</a>
+      <div class="Four">
+        <h3>Кейсы</h3>
+        <p ><b>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam ut neque.</p>
       </div>
+      <div class="Five">
+        <div class="Five2">
+          <h3>Расчет стоимости</h3>
+          <div class="Strok">
+            <h5>Тип сайта</h5>
+            <select name="list1" id="list" >
+              <option value="Opt1">Выберите пункт...</option>
+            </select>
+            <h5>Дизайн</h5>
+            <select name="list2" id="list">
+              <option value="Opt2">Выберите пункт...</option>
+            </select>
+            <h5>Адаптивность</h5>
+            <select name="list3" id="list">
+              <option value="Opt3">Выберите пункт...</option>
+            </select>
+          </div>
+          <div class="Six">
+            <h5>Сроки</h5>
+            <h5>Стоимость</h5>
+            <a href="https://yandex.ru"target="_blank">Оставить заявку</a>
+          </div>
+        </div>
+      </div>
+      <div class="Static">
+        <h3>Статистика</h3>
+        <div class="static1" style="">
+          <img src="" alt="">
+          <h4>133</h4>
+          <p>Lorem ipsum dolor sit amet.</br></p>
+        </div>
+        <div class="static2" style="">
+          <img src="" alt="">
+          <h4>5454</h4>
+          <p>Lorem ipsum dolor sit amet.</br></p>
+        </div>
+        <div class="static3" style="">
+          <img src="" alt="">
+          <h4>323</h4>
+          <p>Lorem ipsum dolor sit amet.</br></p>
+        </div>
+        <div class="static4" style="">
+          <img src="" alt="">
+          <h4>22</h4>
+          <p>Lorem ipsum dolor sit amet.</br></p>
+        </div>
+      </div>
+      <div class="Seven">
+        <h3>Отзывы</h3>
+        <p><b>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque porro provident, sequi, autem a alias quisquam facere amet tempora quasi,<br> corrupti fugit sapiente distinctio accusantium!</b></p>
+        <p><b>Lorem ipsum, dolor sit amet.</b></p>
+      </span>
     </div>
-  </div>
-  <div class="Static"> 
-    <h3>Статистика</h3>
-    <div class="static1" style="">
-      <img src="" alt="">
-      <h4>133</h4>
-      <p>Lorem ipsum dolor sit amet.</br></p>
-    </div>
-    <div class="static2" style="">
-      <img src="" alt="">
-      <h4>5454</h4>
-      <p>Lorem ipsum dolor sit amet.</br></p>
-    </div>
-    <div class="static3" style="">
-      <img src="" alt="">
-      <h4>323</h4>
-      <p>Lorem ipsum dolor sit amet.</br></p>
-    </div>
-    <div class="static4" style="">
-      <img src="" alt="">
-      <h4>22</h4>
-      <p>Lorem ipsum dolor sit amet.</br></p>
-    </div>
-  </div>   
-  <div class="Seven">
-    <h3>Отзывы</h3>
-    <p><b>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque porro provident, sequi, autem a alias quisquam facere amet tempora quasi,<br> corrupti fugit sapiente distinctio accusantium!</b></p>
-    <p><b>Lorem ipsum, dolor sit amet.</b></p>
-  </span>
-</div>
-
-<footer>
-  <div class="Contate"><h2>Мои контакты</h2></div>
-  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-  <a href="https://yandex.ru/maps/geo/moskva/53166393/?ll=37.646930%2C55.725146&utm_source=main_stripe_big&z=10.46"target="_blank">Яндекс карты</a>
-  <a href="https://mail.ru"target="_blank">Почта</a>
-  <a href="+7 999-999-99-99"target="_blank">+7 999-999-99-99</a>
-  <form action=".,">
-   <div class="Pochta"> <h3>Оставьте мне сообщения</h3>
-    <input class="inputOne" type="text" name="text_input" value="" placeholder="Имя"> 
-    <input class="inputTwo" type="text" name="text_input" value="" placeholder="Email"> 
-    <textarea name="Сообщение" id="1" cols="40" rows="2" >
-
-
-    </textarea>
-  </div>
-  <h3><input class="inputThree" type="reset" value="Отправить"></h3>
-</form>
-</footer>
-
-
-
-
-
-
-
-
-</body>
+    <footer>
+      <div class="Contate"><h2>Мои контакты</h2></div>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+      <a href="https://yandex.ru/maps/geo/moskva/53166393/?ll=37.646930%2C55.725146&utm_source=main_stripe_big&z=10.46"target="_blank">Яндекс карты</a>
+      <a href="https://mail.ru"target="_blank">Почта</a>
+      <a href="+7 999-999-99-99"target="_blank">+7 999-999-99-99</a>
+      <form action=".,">
+        <div class="Pochta"> <h3>Оставьте мне сообщения</h3>
+          <input class="inputOne" type="text" name="text_input" value="" placeholder="Имя">
+          <input class="inputTwo" type="text" name="text_input" value="" placeholder="Email">
+          <textarea name="Сообщение" id="1" cols="40" rows="2" >
+          </textarea>
+        </div>
+        <h3><input class="inputThree" type="reset" value="Отправить"></h3>
+      </form>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
