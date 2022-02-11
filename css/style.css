@@ -159,7 +159,7 @@ main{
 
 }
 .custom-ccs3{
-	font-size: 40px;
+	font-size: 60px;
 }
 
 .title__container input{
@@ -275,13 +275,14 @@ main{
 
 .Two{
 	background: url(../img/fon.jpg) center/cover no-repeat;
+	height: 400px;
 	
 }
 .Two h2{
 	color: #6d7682;
 	font-size: 35px;
 	line-height: 60px;
-	padding-left: 800px;
+	
 	text-decoration: underline;
 	-webkit-animation: Two 7s ease forwards;
 	-o-animation: Two 7s ease forwards;
@@ -293,9 +294,8 @@ main{
 .Two p{
 	font-size: 14px;
 	color: #111;
-	height: 40px;
+	height: 60px;
 	text-align: left;
-	margin: 8px 4px 0px 700px;
 	letter-spacing: 0.5px;	
 	line-height: 20px;
 	-webkit-animation: Twop 4.4s ease forwards;
@@ -305,7 +305,6 @@ main{
 }
 .Two th{
 	float: left;		
-	margin: 2px 0px 30px 775px;
 	color: #2c384a;
 
 }
@@ -316,13 +315,14 @@ main{
 	background: none;
 	border-radius: 10px;
 	padding: 0 16px;
-	margin-top: 10px;
+	margin-top: 110px;
 	font-size: 14px;
 	-webkit-animation: th 6.4s ease forwards;
 	-o-animation: th 6.4s ease forwards;
 	animation: th 6.4s ease forwards;
 	
 }
+
 th input{
 	transition: all 0.2s;
 	transform: scale(1);
@@ -353,7 +353,7 @@ th input:active{
 	}
 	to{
 		opacity: 1;
-		margin-left: 650px;			
+		margin-left: 0px;			
 	}
 }
 @keyframes th{
@@ -363,7 +363,7 @@ th input:active{
 	}
 	to{
 		opacity: 1;
-		margin-bottom: 110px;			
+		margin-bottom: 0px;			
 	}
 }
 .Two input:hover{
